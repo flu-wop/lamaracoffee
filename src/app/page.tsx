@@ -24,11 +24,12 @@ export default function Home() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/menu/rainbow-tostadas.webp"
+            src="/images/brand/ig-post1.webp"
             alt=""
             fill
             priority
-            className="object-cover"
+            sizes="100vw"
+            className="object-cover object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/70 to-ink/25" />
           <div className="absolute inset-0 bg-gradient-to-r from-cream/40 via-transparent to-cream/10" />
@@ -130,9 +131,10 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
             <Image
-              src="/images/menu/spring-roll-bowl.webp"
-              alt="Spring roll bowl with fresh vegetables and herbs"
+              src="/images/brand/ig-post3.webp"
+              alt="House-made desserts at Lamara Coffee & Kitchen"
               fill
+              sizes="(min-width: 768px) 45vw, 90vw"
               className="object-cover"
             />
           </div>
@@ -159,15 +161,15 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div className="grid grid-cols-4 gap-2.5 sm:grid-cols-6 sm:gap-3 lg:grid-cols-8">
             {GALLERY.map((g) => (
-              <div key={g.src} className="relative aspect-square overflow-hidden rounded-2xl bg-cream-deep">
+              <div key={g.src} className="relative aspect-square overflow-hidden rounded-xl bg-cream-deep">
                 <Image
                   src={g.src}
                   alt={g.alt}
                   fill
                   loading="eager"
-                  sizes="(min-width: 640px) 25vw, 50vw"
+                  sizes="140px"
                   className="object-cover transition-transform duration-500 hover:scale-105"
                 />
               </div>

@@ -12,7 +12,7 @@ export default function MenuSection({ category }: { category: MenuCategory }) {
           <p className="mt-2 text-sm leading-relaxed text-ink-soft">{category.blurb}</p>
         )}
       </div>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {category.items.map((item) => (
           <MenuCard key={item.id} item={item} />
         ))}

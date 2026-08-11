@@ -102,13 +102,31 @@ export default function AboutPage() {
       <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
         <div className="grid gap-4 sm:grid-cols-3">
           <div className="relative aspect-square overflow-hidden rounded-2xl">
-            <Image src="/images/brand/ig-post1.webp" alt="Plates of organic food at Lamara" fill className="object-cover" />
+            <Image
+              src="/images/brand/ig-post1.webp"
+              alt="Plates of organic food at Lamara"
+              fill
+              sizes="(min-width: 640px) 33vw, 100vw"
+              className="object-cover object-bottom"
+            />
           </div>
           <div className="relative aspect-square overflow-hidden rounded-2xl">
-            <Image src="/images/brand/ig-post3.webp" alt="House-made ice cream sandwiches" fill className="object-cover" />
+            <Image
+              src="/images/brand/ig-post3.webp"
+              alt="House-made ice cream sandwiches"
+              fill
+              sizes="(min-width: 640px) 33vw, 100vw"
+              className="object-cover"
+            />
           </div>
           <div className="relative aspect-square overflow-hidden rounded-2xl">
-            <Image src="/images/menu/sunrise-kingdom.webp" alt="Sunrise Kingdom sandwich" fill className="object-cover" />
+            <Image
+              src="/images/brand/ig-post2.webp"
+              alt="Fresh vegetable dish at Lamara"
+              fill
+              sizes="(min-width: 640px) 33vw, 100vw"
+              className="object-cover object-bottom"
+            />
           </div>
         </div>
       </section>
