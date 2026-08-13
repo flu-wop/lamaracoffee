@@ -23,6 +23,12 @@ export default function Footer() {
             <br />
             {SITE.address.line2}
           </p>
+          <a
+            href={`tel:${SITE.phoneHref}`}
+            className="mt-2 inline-block text-sm text-ink-soft transition-colors hover:text-terracotta-deep"
+          >
+            {SITE.phone}
+          </a>
           <ul className="mt-4 space-y-1 text-sm text-ink-soft">
             {SITE.hours.map((h) => (
               <li key={h.days} className="flex justify-between gap-4">
@@ -42,7 +48,7 @@ export default function Footer() {
             <li><Link href="/contact" className="hover:text-terracotta-deep">Contact</Link></li>
             <li>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/lamaracoffeeandkitchen/"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-terracotta-deep"

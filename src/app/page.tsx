@@ -39,6 +39,12 @@ export default function Home() {
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-sage-deep">
             Mid City · New Orleans
           </p>
+          <div className="mb-5 flex items-center gap-2">
+            <span className="flex text-terracotta-deep" aria-hidden>
+              {"★★★★★"}
+            </span>
+            <span className="text-sm text-ink-soft">4.4 · 100+ reviews</span>
+          </div>
           <h1 className="font-display max-w-3xl text-balance text-5xl font-light leading-[1.05] text-ink sm:text-6xl md:text-7xl">
             Organic food, brewed slow, grown <em className="text-terracotta-deep">honest</em>.
           </h1>
@@ -88,6 +94,12 @@ export default function Home() {
               <br />
               {SITE.address.line2}
             </p>
+            <a
+              href={`tel:${SITE.phoneHref}`}
+              className="mt-2 inline-block text-sm text-ink-soft transition-colors hover:text-sage-deep"
+            >
+              {SITE.phone}
+            </a>
           </div>
           <div>
             <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Next Door</h3>
@@ -95,6 +107,22 @@ export default function Home() {
               Esplanade Studios — grab breakfast before a session, or a smoothie after
               one.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Dietary positioning strip */}
+      <section className="bg-cream">
+        <div className="mx-auto max-w-6xl px-5 py-8 sm:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            {SITE.dietary.map((tag) => (
+              <span
+                key={tag}
+                className="font-mono text-[11px] uppercase tracking-widest text-sage-deep"
+              >
+                {tag}
+              </span>
+            ))}
           </div>
         </div>
       </section>

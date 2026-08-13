@@ -57,8 +57,24 @@ export default function ContactPage() {
                 </ul>
               </div>
               <div>
+                <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Phone</h3>
+                <a
+                  href={`tel:${SITE.phoneHref}`}
+                  className="mt-2 block text-base text-ink transition-colors hover:text-terracotta-deep"
+                >
+                  {SITE.phone}
+                </a>
+              </div>
+              <div>
                 <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Instagram</h3>
-                <p className="mt-2 text-sm text-ink">{SITE.instagram}</p>
+                <a
+                  href="https://www.instagram.com/lamaracoffeeandkitchen/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 block text-sm text-ink transition-colors hover:text-terracotta-deep"
+                >
+                  {SITE.instagram}
+                </a>
               </div>
               <div>
                 <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Owners</h3>
