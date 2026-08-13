@@ -36,7 +36,7 @@ export default function CheckoutSuccessPage() {
           screen.
         </p>
         <Link
-          href="/food-menu"
+          href="/menu"
           className="mt-8 inline-block rounded-full bg-ink px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
         >
           Browse Menu
@@ -130,7 +130,7 @@ export default function CheckoutSuccessPage() {
           Back to Home
         </Link>
         <Link
-          href="/food-menu"
+          href="/menu"
           className="rounded-full border border-sage-deep px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-sage-deep transition-colors hover:bg-sage-deep hover:text-cream"
         >
           Order Again

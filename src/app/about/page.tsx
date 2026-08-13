@@ -137,7 +137,7 @@ export default function AboutPage() {
         </h2>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
-            href="/food-menu"
+            href="/menu"
             className="rounded-full bg-ink px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
           >
             Order Food

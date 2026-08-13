@@ -41,7 +41,7 @@ export default function CartDrawer() {
                 Add something from the food or drink menu to see it here.
               </p>
               <Link
-                href="/food-menu"
+                href="/menu"
                 onClick={close}
                 className="mt-2 rounded-full bg-sage-deep px-5 py-2 text-xs uppercase tracking-[0.14em] text-cream"
               >

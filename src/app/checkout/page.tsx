@@ -63,7 +63,7 @@ export default function CheckoutPage() {
           Add something from the menu before checking out.
         </p>
         <Link
-          href="/food-menu"
+          href="/menu"
           className="mt-8 inline-block rounded-full bg-ink px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
         >
           Browse Menu

@@ -42,8 +42,7 @@ export default function Footer() {
         <div>
           <h3 className="mb-4 text-xs uppercase tracking-[0.22em] text-ink-soft">Explore</h3>
           <ul className="space-y-2 text-sm text-ink-soft">
-            <li><Link href="/food-menu" className="hover:text-terracotta-deep">Food Menu</Link></li>
-            <li><Link href="/drink-menu" className="hover:text-terracotta-deep">Drink Menu</Link></li>
+            <li><Link href="/menu" className="hover:text-terracotta-deep">Menu</Link></li>
             <li><Link href="/about" className="hover:text-terracotta-deep">About</Link></li>
             <li><Link href="/contact" className="hover:text-terracotta-deep">Contact</Link></li>
             <li>
