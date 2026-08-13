@@ -140,7 +140,7 @@ export default function AboutPage() {
             href="/menu"
             className="rounded-full bg-ink px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
           >
-            Order Food
+            View Menu
           </Link>
           <Link
             href="/contact"

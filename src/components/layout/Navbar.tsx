@@ -49,16 +49,10 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <Link
-            href="/menu#eats"
-            className="hidden rounded-full border border-sage-deep px-4 py-2 text-xs uppercase tracking-[0.14em] text-sage-deep transition-colors hover:bg-sage-deep hover:text-cream sm:block"
+            href="/menu"
+            className="hidden rounded-full bg-sage-deep px-5 py-2 text-xs uppercase tracking-[0.14em] text-cream transition-colors hover:bg-sage sm:block"
           >
-            Order Food
-          </Link>
-          <Link
-            href="/menu#coffee-bar"
-            className="hidden rounded-full bg-sage-deep px-4 py-2 text-xs uppercase tracking-[0.14em] text-cream transition-colors hover:bg-sage sm:block"
-          >
-            Order Drinks
+            View Menu
           </Link>
           <button
             aria-label="Open cart"

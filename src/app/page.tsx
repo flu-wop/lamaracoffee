@@ -55,16 +55,10 @@ export default function Home() {
 
           <div className="mt-9 flex flex-wrap items-center gap-4">
             <Link
-              href="/menu#eats"
-              className="rounded-full bg-ink px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
+              href="/menu"
+              className="rounded-full bg-ink px-8 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
             >
-              Order Food
-            </Link>
-            <Link
-              href="/menu#coffee-bar"
-              className="rounded-full border border-sage-deep px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-sage-deep transition-colors hover:bg-sage-deep hover:text-cream"
-            >
-              Order Drinks
+              View Menu
             </Link>
           </div>
           <p className="mt-3 text-sm text-ink-soft">
@@ -216,16 +210,10 @@ export default function Home() {
         </h2>
         <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
           <Link
-            href="/menu#eats"
-            className="rounded-full bg-ink px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
+            href="/menu"
+            className="rounded-full bg-ink px-8 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
           >
-            Order Food
-          </Link>
-          <Link
-            href="/menu#coffee-bar"
-            className="rounded-full border border-sage-deep px-7 py-3.5 text-xs uppercase tracking-[0.18em] text-sage-deep transition-colors hover:bg-sage-deep hover:text-cream"
-          >
-            Order Drinks
+            View Menu
           </Link>
         </div>
       </section>
