@@ -6,7 +6,7 @@ import { foodCategories, drinkCategories, addOnCategories } from "@/lib/menu-dat
 export const metadata: Metadata = {
   title: "Menu | Lamara Coffee & Kitchen",
   description:
-    "Organic, plant-forward food and drinks from Lamara Coffee & Kitchen in Mid City New Orleans — burritos, burgers, waffles, tostadas, coffee, and smoothies. Oat milk default.",
+    "Organic, plant-forward food and drinks from Lamara Coffee & Kitchen in Mid City New Orleans — burritos, burgers, waffles, smoothie bowls, espresso drinks, and organic teas. Oat milk default, order online for pickup.",
 };
 
 const allCategories = [...foodCategories, ...drinkCategories, ...addOnCategories];
