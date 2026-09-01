@@ -96,6 +96,12 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+          <Link
+            href="/food-standards"
+            className="mt-8 inline-block text-sm uppercase tracking-[0.16em] text-terracotta-deep underline decoration-terracotta/40 underline-offset-4 hover:decoration-terracotta"
+          >
+            Curious exactly what&apos;s in our food + drink? →
+          </Link>
         </div>
       </section>
 

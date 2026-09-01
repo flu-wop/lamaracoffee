@@ -55,6 +55,7 @@ export default function Footer() {
           <ul className="space-y-2 text-sm text-ink-soft">
             <li><Link href="/menu" className="hover:text-terracotta-deep">Menu</Link></li>
             <li><Link href="/about" className="hover:text-terracotta-deep">About</Link></li>
+            <li><Link href="/food-standards" className="hover:text-terracotta-deep">What&apos;s In Our Food</Link></li>
             <li><Link href="/contact" className="hover:text-terracotta-deep">Contact</Link></li>
             <li>
               <a
