@@ -10,14 +10,24 @@ import {
   type ReactNode,
 } from "react";
 
+export type CartLineModifier = {
+  groupId: string;
+  groupName: string;
+  choiceId: string;
+  label: string;
+  price: number;
+};
+
 export type CartLine = {
   key: string;
   itemId: string;
   name: string;
   size: string;
-  price: number;
+  price: number; // unit price, inclusive of selected modifier costs
   qty: number;
   image?: string;
+  modifiers?: CartLineModifier[];
+  notes?: string;
 };
 
 type CartContextValue = {
@@ -58,7 +68,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [lines, hydrated]);
 
   const addItem = useCallback((line: Omit<CartLine, "qty" | "key">, qty = 1) => {
-    const key = `${line.itemId}__${line.size}`;
+    const modSig = (line.modifiers ?? [])
+      .map((m) => m.label)
+      .sort()
+      .join("|");
+    const key = `${line.itemId}__${line.size}__${modSig}__${line.notes ?? ""}`;
     setLines((prev) => {
       const existing = prev.find((l) => l.key === key);
       if (existing) {

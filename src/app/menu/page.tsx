@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import MenuSection from "@/components/MenuSection";
 import MenuJumpNav from "@/components/MenuJumpNav";
-import { foodCategories, drinkCategories } from "@/lib/menu-data";
+import { foodCategories, drinkCategories, addOnCategories } from "@/lib/menu-data";
 
 export const metadata: Metadata = {
   title: "Menu | Lamara Coffee & Kitchen",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "Organic, plant-forward food and drinks from Lamara Coffee & Kitchen in Mid City New Orleans — burritos, burgers, waffles, tostadas, coffee, and smoothies. Oat milk default.",
 };
 
-const allCategories = [...foodCategories, ...drinkCategories];
+const allCategories = [...foodCategories, ...drinkCategories, ...addOnCategories];
 
 export default function MenuPage() {
   return (

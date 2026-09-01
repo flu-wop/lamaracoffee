@@ -6,6 +6,7 @@ export type MenuItem = {
   image?: string;
   sizes: { label: string; price: number }[];
   availability?: "low" | "out";
+  modifierGroupIds?: string[];
 };
 
 export type MenuCategory = {
@@ -25,6 +26,7 @@ export const foodCategories: MenuCategory[] = [
     items: [
       {
         id: "labrea-burrito",
+        modifierGroupIds: ["allergy-alert", "la-brea-burrito-custom"],
         name: "LA Brea Burrito",
         tags: ["nut free"],
         description:
@@ -37,6 +39,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "grain-free-waffle",
+        modifierGroupIds: ["allergy-alert"],
         name: "Grain-Free Belgian Waffle",
         tags: ["GF", "nuts", "egg"],
         description:
@@ -46,6 +49,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "del-mar",
+        modifierGroupIds: ["allergy-alert"],
         name: "Del~Mar",
         tags: ["V", "nuts"],
         description:
@@ -58,6 +62,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "west-coast-toast",
+        modifierGroupIds: ["allergy-alert"],
         name: "West Coast Toast",
         description:
           "Grilled organic sourdough, smashed avocado, heirloom tomato, microgreens, chili-lime, choice of egg.",
@@ -69,6 +74,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "lamara-burger",
+        modifierGroupIds: ["allergy-alert", "lamara-burger-egg", "lamara-burger-custom", "lamara-burger-wedges", "lamara-burger-bowl"],
         name: "Lamara Burger",
         tags: ["contains walnuts"],
         description:
@@ -81,6 +87,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "sunrise-kingdom",
+        modifierGroupIds: ["allergy-alert"],
         name: "Sunrise Kingdom",
         tags: ["nuts"],
         description:
@@ -93,6 +100,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "rainbow-tostadas",
+        modifierGroupIds: ["allergy-alert"],
         name: "Rainbow Tostadas",
         tags: ["V", "2 pc"],
         description:
@@ -105,6 +113,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "spring-roll-bowl-custom",
+        modifierGroupIds: ["allergy-alert"],
         name: "Spring Roll Bowl, Custom To-Go",
         description:
           "Bed of greens, baked sprouted tofu, brown rice noodles, cucumbers, carrots, herbs, sesame seeds, scallions, toasted peanuts, spicy peanut-ginger sauce.",
@@ -116,6 +125,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "blat",
+        modifierGroupIds: ["allergy-alert"],
         name: "BLAT Sandwich",
         tags: ["13g protein", "V"],
         description:
@@ -125,6 +135,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "protein-greens",
+        modifierGroupIds: ["allergy-alert"],
         name: "Protein + Greens",
         tags: ["GF"],
         description:
@@ -137,6 +148,7 @@ export const foodCategories: MenuCategory[] = [
       },
       {
         id: "california-burrito",
+        modifierGroupIds: ["allergy-alert"],
         name: "California Burrito",
         tags: ["V"],
         description:
@@ -159,6 +171,7 @@ export const drinkCategories: MenuCategory[] = [
     items: [
       {
         id: "matcha-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Matcha Latte",
         description:
           "Nekohama organic ceremonial-grade premium A1 matcha from Kyushu. We recommend it made with our house organic almond milk.",
@@ -170,26 +183,29 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Latte",
         description: "A double shot of Ruby Roaster's Creamery blend with milk of choice.",
         image: img("latte.webp"),
         sizes: [
-          { label: "16oz", price: 5.5 },
-          { label: "20oz", price: 5.75 },
+          { label: "16oz", price: 5.25 },
+          { label: "20oz", price: 5.5 },
         ],
       },
       {
         id: "vanilla-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Vanilla Latte",
         description: "Ruby's double shot espresso, house organic vanilla syrup, milk of choice.",
         image: img("vanilla-lattee.webp"),
         sizes: [
-          { label: "16oz", price: 5.5 },
-          { label: "20oz", price: 5.75 },
+          { label: "16oz", price: 5.75 },
+          { label: "20oz", price: 6.0 },
         ],
       },
       {
         id: "cardamom-vanilla-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Cardamom Vanilla Latte",
         description: "House-made vanilla syrup, cardamom, double shot espresso, milk of choice.",
         image: img("cardamom-vanilla.webp"),
@@ -200,6 +216,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "lavender-vanilla-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Lavender Vanilla Latte",
         description: "House-made lavender vanilla syrup, double shot espresso, steamed milk of choice.",
         image: img("lavender-vanilla.webp"),
@@ -210,6 +227,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "honey-cinnamon-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Honey-Cinnamon Latte",
         description: "Local 9th Ward raw honey, organic Ceylon cinnamon, double shot espresso, steamed milk of choice.",
         image: img("honey-cinnamon.webp"),
@@ -220,6 +238,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "golden-state-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Golden State Wellness Latte",
         description: "2.5g MUD\\WTR mushroom blend (cacao, ginger, turmeric, chai spices), oat milk, local raw honey. No espresso in this one.",
         image: img("golden-state.webp"),
@@ -230,6 +249,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "turmeric-ginger-latte",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Turmeric Ginger Latte",
         tags: ["fan favorite"],
         description: "Kilogram organic loose-leaf tonic blended with ginger, black licorice, lemon + lime peel, steamed almond milk.",
@@ -241,6 +261,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "mocha",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Mocha",
         description: "San Diego Cafe Moto's signature dark cacao blended with coconut sugar and a double shot of Ruby's Creamery blend, oat milk.",
         image: img("mocha.webp"),
@@ -251,6 +272,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "oaxaca-moca",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Oaxaca Moca",
         tags: ["best seller"],
         description: "Cafe Moto's blend of cinnamon, dark cacao and crushed candied peanuts, blended with oat milk.",
@@ -259,6 +281,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "cortado",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Cortado",
         description: "A double shot of Ruby Roaster's Creamery blend, 6oz, with steamed oat milk.",
         image: img("cortado.webp"),
@@ -269,6 +292,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "cappuccino",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Cappuccino",
         description: "A double shot of Ruby Roaster's Creamery blend with oat milk froth.",
         image: img("cappucino.webp"),
@@ -279,6 +303,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "espresso",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Espresso",
         description: "A double shot of Ruby Roaster's Creamery blend.",
         image: img("espresso.webp"),
@@ -289,6 +314,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "hot-chocolate",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Hot Chocolate",
         description: "Cafe Moto's organic dark chocolate recipe, oat milk, steamed.",
         image: img("hot-chocolate.webp"),
@@ -313,6 +339,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "americano",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Americano",
         description: "Double shot of Ruby's Creamery blend over hot water.",
         image: img("espresso.webp"),
@@ -323,6 +350,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "cafe-au-lait",
+        modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Cafe Au Lait",
         description: "Half drip, half steamed milk.",
         image: img("espresso.webp"),
@@ -378,6 +406,7 @@ export const drinkCategories: MenuCategory[] = [
     items: [
       {
         id: "aloha-antioxidant",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "Aloha Antioxidant+",
         description: "Organic pineapple, banana, spinach, house-made cashew milk, coconut butter, vanilla protein, liposomal zinc + vitamin C, baobab.",
         image: img("aloha.webp"),
@@ -385,6 +414,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "berry-longevity",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "Berry Longevity+",
         tags: ["best seller"],
         description: "Our best-selling blend of mixed organic berries, banana, plant protein, raw coconut butter, cashew milk.",
@@ -393,6 +423,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "mint-chip",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "Mint Chip",
         description: "Banana, vanilla protein, mint extract, coconut butter, spinach, cacao nibs, maca, housemade cashew milk. 12g protein.",
         image: img("mint.webp"),
@@ -400,6 +431,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "pb-protein-cacao",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "PB Protein + Cacao",
         tags: ["25g protein"],
         description: "Peruvian cacao, double chocolate protein, cashew milk, banana, peanut butter.",
@@ -408,6 +440,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "golden-glow",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "Golden Glow",
         description: "Grass-fed, lactose-free kefir, mango, pineapple, banana, coconut.",
         image: img("golden.webp"),
@@ -415,6 +448,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "brain-buzz",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "Brain Buzz",
         description: "Double espresso shot, cacao, banana, raw almond butter, protein powder.",
         image: img("brain-buzz.webp"),
@@ -422,6 +456,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "acai-bowl",
+        modifierGroupIds: ["smoothie-boosters", "acai-bowl-custom"],
         name: "Acai Protein Bowl",
         description: "Pure açaí, blueberries, banana, house-made cashew milk, seed + nut granola (GF), chia pudding, cacao nibs, coconut shreds.",
         image: img("acai.webp"),
@@ -429,27 +464,10 @@ export const drinkCategories: MenuCategory[] = [
         availability: "low",
       },
       {
-        id: "superfood",
-        name: "Superfood",
-        description: "Our nutrient-dense rotating blend — ask your barista what's in the blender today.",
-        sizes: [{ label: "16oz", price: 13 }],
-      },
-      {
         id: "dragonfruit-bowl",
+        modifierGroupIds: ["smoothie-boosters"],
         name: "Dragonfruit Bowl",
         description: "Dragonfruit, banana, coconut water base, topped with seasonal fruit and house granola.",
-        sizes: [{ label: "Bowl", price: 15 }],
-      },
-      {
-        id: "honolulu-queen",
-        name: "Honolulu Queen",
-        description: "Pineapple, mango, coconut, banana, topped island-style with toasted coconut and macadamia.",
-        sizes: [{ label: "Bowl", price: 15 }],
-      },
-      {
-        id: "fortune-teller",
-        name: "Fortune Teller",
-        description: "Blue spirulina, banana, pineapple, coconut milk, topped with edible flowers and granola.",
         sizes: [{ label: "Bowl", price: 15 }],
       },
     ],
@@ -502,6 +520,7 @@ export const drinkCategories: MenuCategory[] = [
       },
       {
         id: "spring-roll-bowl-chilled",
+        modifierGroupIds: ["allergy-alert"],
         name: "Spring Roll Bowl",
         tags: ["V", "GF", "peanuts"],
         description: "Baked sprouted tofu, cucumber, carrots, spring mix, mint, cilantro, scallions, spicy peanut-ginger sauce.",
@@ -527,7 +546,22 @@ export const drinkCategories: MenuCategory[] = [
   },
 ];
 
-export const allCategories = [...foodCategories, ...drinkCategories];
+export const addOnCategories: MenuCategory[] = [
+  {
+    id: "add-ons",
+    title: "Add-Ons",
+    items: [
+      {
+        id: "espresso-shot-extra",
+        name: "Espresso Shot (extra)",
+        description: "Add an extra shot to any drink.",
+        sizes: [{ label: "Shot", price: 2 }],
+      },
+    ],
+  },
+];
+
+export const allCategories = [...foodCategories, ...drinkCategories, ...addOnCategories];
 
 export function findItem(id: string): MenuItem | undefined {
   for (const cat of allCategories) {

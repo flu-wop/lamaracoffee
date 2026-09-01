@@ -1,20 +1,30 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import type { CartLine } from "@/lib/cart-context";
 import { SITE } from "@/lib/site-data";
+
+type OrderLine = {
+  itemId: string;
+  name: string;
+  size: string;
+  unitPriceCents: number;
+  qty: number;
+  modifiers: { groupName: string; label: string; priceCents: number }[];
+  notes?: string;
+};
 
 type Order = {
   orderNumber: string;
-  pickup: string;
-  lines: CartLine[];
-  subtotal: number;
-  tax: number;
-  total: number;
+  pickupSlot: string;
+  lines: OrderLine[];
+  subtotalCents: number;
+  taxCents: number;
+  totalCents: number;
   placedAt: string;
 };
+
+const money = (cents: number) => `$${(cents / 100).toFixed(2)}`;
 
 export default function CheckoutSuccessPage() {
   const [order, setOrder] = useState<Order | null | undefined>(undefined);
@@ -32,8 +42,7 @@ export default function CheckoutSuccessPage() {
       <div className="mx-auto max-w-xl px-5 py-28 text-center sm:px-8">
         <p className="font-display text-3xl text-ink">No recent order found</p>
         <p className="mt-3 text-sm text-ink-soft">
-          Place a demo order from the food or drink menu to see the confirmation
-          screen.
+          Place an order from the menu to see the confirmation screen.
         </p>
         <Link
           href="/menu"
@@ -53,15 +62,12 @@ export default function CheckoutSuccessPage() {
             <path d="M20 6 9 17l-5-5" />
           </svg>
         </div>
-        <p className="text-xs uppercase tracking-[0.3em] text-sage-deep">
-          Order Confirmed — Demo
-        </p>
+        <p className="text-xs uppercase tracking-[0.3em] text-sage-deep">Order Confirmed</p>
         <h1 className="font-display mt-3 text-4xl font-light text-ink sm:text-5xl">
           Thanks — order #{order.orderNumber.split("-")[1]}
         </h1>
         <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-          This screen previews what a real confirmation would look like. No payment
-          was processed and no order was actually sent to the kitchen.
+          We&apos;ve got it — pickup: {order.pickupSlot}.
         </p>
       </div>
 
@@ -73,27 +79,35 @@ export default function CheckoutSuccessPage() {
           </div>
           <div className="text-right">
             <p className="text-xs uppercase tracking-[0.16em] text-ink-soft">Pickup</p>
-            <p className="text-sm text-ink">{order.pickup}</p>
+            <p className="text-sm text-ink">{order.pickupSlot}</p>
           </div>
         </div>
 
         <ul className="divide-y divide-line">
-          {order.lines.map((line) => (
-            <li key={line.key} className="flex gap-3 py-4">
-              <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-cream-deep">
-                {line.image && (
-                  <Image src={line.image} alt={line.name} fill className="object-cover" />
-                )}
-              </div>
+          {order.lines.map((line, i) => (
+            <li key={i} className="flex gap-3 py-4">
               <div className="flex flex-1 items-start justify-between gap-2">
                 <div>
                   <p className="text-sm text-ink">
                     {line.name} <span className="text-ink-soft">× {line.qty}</span>
                   </p>
                   <p className="text-xs text-ink-soft">{line.size}</p>
+                  {line.modifiers.length > 0 && (
+                    <ul className="mt-0.5">
+                      {line.modifiers.map((m, j) => (
+                        <li key={j} className="text-xs text-ink-soft">
+                          {m.label}
+                          {m.priceCents ? ` (+${money(m.priceCents)})` : ""}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {line.notes && (
+                    <p className="text-xs italic text-ink-soft">&ldquo;{line.notes}&rdquo;</p>
+                  )}
                 </div>
                 <span className="whitespace-nowrap text-sm text-ink">
-                  ${(line.price * line.qty).toFixed(2)}
+                  {money(line.unitPriceCents * line.qty)}
                 </span>
               </div>
             </li>
@@ -103,15 +117,15 @@ export default function CheckoutSuccessPage() {
         <div className="mt-2 space-y-2 border-t border-line pt-4 text-sm">
           <div className="flex justify-between text-ink-soft">
             <span>Subtotal</span>
-            <span>${order.subtotal.toFixed(2)}</span>
+            <span>{money(order.subtotalCents)}</span>
           </div>
           <div className="flex justify-between text-ink-soft">
             <span>Tax</span>
-            <span>${order.tax.toFixed(2)}</span>
+            <span>{money(order.taxCents)}</span>
           </div>
           <div className="flex justify-between text-base font-medium text-ink">
             <span>Total</span>
-            <span>${order.total.toFixed(2)}</span>
+            <span>{money(order.totalCents)}</span>
           </div>
         </div>
       </div>

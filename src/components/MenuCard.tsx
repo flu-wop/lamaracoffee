@@ -4,16 +4,23 @@ import { useState } from "react";
 import Image from "next/image";
 import { useCart } from "@/lib/cart-context";
 import type { MenuItem } from "@/lib/menu-data";
+import ItemModal from "@/components/ItemModal";
 
 export default function MenuCard({ item }: { item: MenuItem }) {
   const [sizeIndex, setSizeIndex] = useState(0);
   const [added, setAdded] = useState(false);
+  const [customizing, setCustomizing] = useState(false);
   const { addItem } = useCart();
   const size = item.sizes[sizeIndex];
   const soldOut = item.availability === "out";
+  const hasModifiers = !!item.modifierGroupIds?.length;
 
   const handleAdd = () => {
     if (soldOut) return;
+    if (hasModifiers) {
+      setCustomizing(true);
+      return;
+    }
     addItem({
       itemId: item.id,
       name: item.name,
@@ -80,7 +87,7 @@ export default function MenuCard({ item }: { item: MenuItem }) {
                 : "bg-ink text-cream hover:bg-terracotta-deep"
             }`}
           >
-            {soldOut ? "Sold Out" : added ? "Added ✓" : "Add"}
+            {soldOut ? "Sold Out" : added ? "Added ✓" : hasModifiers ? "Customize" : "Add"}
           </button>
         </div>
       </div>
@@ -113,6 +120,9 @@ export default function MenuCard({ item }: { item: MenuItem }) {
           </span>
         )}
       </div>
+      {customizing && (
+        <ItemModal item={item} initialSizeIndex={sizeIndex} onClose={() => setCustomizing(false)} />
+      )}
     </div>
   );
 }

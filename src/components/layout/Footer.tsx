@@ -60,7 +60,10 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-line px-5 py-5 text-center text-xs text-ink-soft sm:px-8">
-        © {new Date().getFullYear()} Lamara Coffee &amp; Kitchen. All rights reserved.
+        © {new Date().getFullYear()} Lamara Coffee &amp; Kitchen. All rights reserved. ·{" "}
+        <Link href="/privacy" className="hover:text-terracotta-deep">
+          Privacy
+        </Link>
       </div>
     </footer>
   );

@@ -66,6 +66,19 @@ export default function CartDrawer() {
                       <div>
                         <p className="font-display text-lg leading-tight text-ink">{line.name}</p>
                         <p className="text-xs uppercase tracking-wide text-ink-soft">{line.size}</p>
+                        {line.modifiers && line.modifiers.length > 0 && (
+                          <ul className="mt-1 space-y-0.5">
+                            {line.modifiers.map((m, i) => (
+                              <li key={i} className="text-xs text-ink-soft">
+                                {m.label}
+                                {m.price ? ` (+$${m.price.toFixed(2)})` : ""}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        {line.notes && (
+                          <p className="mt-1 text-xs italic text-ink-soft">&ldquo;{line.notes}&rdquo;</p>
+                        )}
                       </div>
                       <button
                         onClick={() => removeItem(line.key)}
