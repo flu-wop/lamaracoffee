@@ -100,31 +100,78 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="relative aspect-square overflow-hidden rounded-2xl">
-            <Image
-              src="/images/brand/ig-post1.webp"
-              alt="Plates of organic food at Lamara"
-              fill
-              sizes="(min-width: 640px) 33vw, 100vw"
-              className="object-cover object-bottom"
-            />
+        <div className="grid items-center gap-14 md:grid-cols-2">
+          <div>
+            <p className="mb-3 text-xs uppercase tracking-[0.3em] text-sage-deep">
+              The Space
+            </p>
+            <h2 className="font-display text-3xl font-light leading-tight text-ink sm:text-4xl">
+              A 1920s house, reimagined for the neighborhood.
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-ink-soft">
+              A renovated raised-basement house built in the 1920s, fully modernized
+              into a street-level café — with an enclosed back patio for outdoor
+              seating, an exposed garden area with lounge chairs for catching some
+              sun, and street-access seating out front for people-watching.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-ink-soft">
+              Stop by the café&apos;s retail corner too — handmade ceramics, Japanese
+              ceramics, Sandoval Aromatics, and other specialty finds alongside your
+              coffee.
+            </p>
           </div>
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-cream-deep">
+            <Image
+              src="/images/brand/woodie-wagon.webp"
+              alt="Vintage surf wagon — Lamara's West Coast-inspired spirit"
+              fill
+              sizes="(min-width: 768px) 45vw, 90vw"
+              className="object-cover grayscale"
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/60 to-transparent px-5 py-4">
+              <p className="text-xs uppercase tracking-[0.25em] text-cream">
+                West Coast roots, Mid City home
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           <div className="relative aspect-square overflow-hidden rounded-2xl">
             <Image
-              src="/images/brand/ig-post3.webp"
-              alt="House-made ice cream sandwiches"
+              src="/images/brand/soup-curry.webp"
+              alt="Plant-based soup and tofu curry at Lamara"
               fill
-              sizes="(min-width: 640px) 33vw, 100vw"
+              sizes="(min-width: 640px) 25vw, 50vw"
               className="object-cover"
             />
           </div>
           <div className="relative aspect-square overflow-hidden rounded-2xl">
             <Image
-              src="/images/brand/ig-post2.webp"
-              alt="Fresh vegetable dish at Lamara"
+              src="/images/brand/burrito-wrap.webp"
+              alt="Breakfast burrito wrap at Lamara"
               fill
-              sizes="(min-width: 640px) 33vw, 100vw"
+              sizes="(min-width: 640px) 25vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square overflow-hidden rounded-2xl">
+            <Image
+              src="/images/brand/rainbow-wrap.webp"
+              alt="Rainbow lunch wrap at Lamara"
+              fill
+              sizes="(min-width: 640px) 25vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="relative aspect-square overflow-hidden rounded-2xl">
+            <Image
+              src="/images/brand/ig-post1.webp"
+              alt="Plates of organic food at Lamara"
+              fill
+              sizes="(min-width: 640px) 25vw, 50vw"
               className="object-cover object-bottom"
             />
           </div>

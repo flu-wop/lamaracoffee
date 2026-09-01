@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/site-data";
 import PreviewBadge from "@/components/layout/PreviewBadge";
@@ -7,13 +8,22 @@ export default function Footer() {
     <footer className="border-t border-line bg-cream-deep">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-4">
         <div className="md:col-span-2">
-          <span className="font-display text-2xl tracking-[0.14em] text-ink">LAMARA</span>
-          <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-soft">
-            Organic, plant-forward coffee &amp; kitchen in the heart of Mid City New
-            Orleans — proudly next door to {SITE.neighbor}.
+          <Image
+            src="/images/brand/wordmark-dark.webp"
+            alt="Lamara"
+            width={220}
+            height={39}
+            className="h-7 w-auto"
+          />
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
+            Vegan, gluten free, vegetarian, no seed oils, no refined sugar.
           </p>
-          <p className="mt-6 text-xs uppercase tracking-[0.2em] text-sage-deep">
-            Grown slow. Served fresh. Rooted in the neighborhood.
+          <p className="mt-3 text-xs uppercase tracking-[0.2em] text-sage-deep">
+            Feel well, be well, do well.
+          </p>
+          <p className="mt-4 max-w-xs text-xs leading-relaxed text-ink-soft">
+            Lamara welcomes all — we do not tolerate hate, discrimination, violence,
+            or intolerance.
           </p>
         </div>
 

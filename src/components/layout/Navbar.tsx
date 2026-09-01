@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
@@ -21,8 +22,15 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 border-b border-line bg-cream/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex flex-col leading-none" onClick={() => setMobileOpen(false)}>
-          <span className="font-display text-2xl tracking-[0.14em] text-ink">LAMARA</span>
-          <span className="mt-0.5 text-[0.6rem] uppercase tracking-[0.35em] text-sage-deep">
+          <Image
+            src="/images/brand/wordmark-dark.webp"
+            alt="Lamara"
+            width={220}
+            height={39}
+            priority
+            className="h-6 w-auto sm:h-7"
+          />
+          <span className="mt-1 text-[0.6rem] uppercase tracking-[0.35em] text-sage-deep">
             Coffee &amp; Kitchen
           </span>
         </Link>
