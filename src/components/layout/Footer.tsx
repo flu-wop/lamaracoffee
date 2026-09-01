@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE } from "@/lib/site-data";
+import PreviewBadge from "@/components/layout/PreviewBadge";
 
 export default function Footer() {
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
           </a>
           <ul className="mt-4 space-y-1 text-sm text-ink-soft">
             {SITE.hours.map((h) => (
-              <li key={h.days} className="flex justify-between gap-4">
+              <li key={h.days} className="flex items-baseline justify-between gap-4">
                 <span>{h.days}</span>
                 <span>{h.time}</span>
               </li>
@@ -64,6 +65,9 @@ export default function Footer() {
         <Link href="/privacy" className="hover:text-terracotta-deep">
           Privacy
         </Link>
+        <div className="mt-2 flex justify-center">
+          <PreviewBadge />
+        </div>
       </div>
     </footer>
   );

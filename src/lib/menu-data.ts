@@ -99,19 +99,6 @@ export const foodCategories: MenuCategory[] = [
         ],
       },
       {
-        id: "rainbow-tostadas",
-        modifierGroupIds: ["allergy-alert"],
-        name: "Rainbow Tostadas",
-        tags: ["V", "2 pc"],
-        description:
-          "Black bean spread, avocado, purple cabbage, romaine, golden beets, scallions, pumpkin seeds, baked corn tortilla, pico de gallo.",
-        image: img("rainbow-tostadas.webp"),
-        sizes: [
-          { label: "2 pc", price: 14 },
-          { label: "4 pc", price: 19 },
-        ],
-      },
-      {
         id: "spring-roll-bowl-custom",
         modifierGroupIds: ["allergy-alert"],
         name: "Spring Roll Bowl, Custom To-Go",

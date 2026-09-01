@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Hours</h3>
                 <ul className="mt-2 space-y-1">
                   {SITE.hours.map((h) => (
-                    <li key={h.days} className="flex justify-between gap-6 text-sm text-ink">
+                    <li key={h.days} className="flex items-baseline justify-between gap-6 text-sm text-ink">
                       <span>{h.days}</span>
                       <span className="text-ink-soft">{h.time}</span>
                     </li>

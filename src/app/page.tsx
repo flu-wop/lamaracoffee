@@ -1,21 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SITE } from "@/lib/site-data";
-
-const GALLERY = [
-  { src: "/images/menu/acai.webp", alt: "Acai protein bowl topped with fruit and granola" },
-  { src: "/images/menu/lamara-burger.webp", alt: "Lamara black bean walnut burger" },
-  { src: "/images/menu/matcha-latte.webp", alt: "Ceremonial grade matcha latte" },
-  { src: "/images/menu/rainbow-tostadas.webp", alt: "Rainbow tostadas with pickled vegetables" },
-  { src: "/images/menu/berry.webp", alt: "Berry longevity smoothie" },
-  { src: "/images/menu/belgian.webp", alt: "Grain-free Belgian waffle with seasonal fruit" },
-  { src: "/images/menu/labrea.webp", alt: "LA Brea breakfast burrito" },
-  { src: "/images/menu/oaxaca.webp", alt: "Oaxaca moca latte art" },
-  { src: "/images/menu/blat.webp", alt: "BLAT sandwich with adzuki bean bacon" },
-  { src: "/images/menu/cortado.webp", alt: "Cortado with steamed oat milk" },
-  { src: "/images/menu/spring-roll-bowl.webp", alt: "Spring roll bowl with peanut ginger sauce" },
-  { src: "/images/menu/chia-parfait.webp", alt: "Omega chia parfait" },
-];
+import KitchenGallery from "@/components/KitchenGallery";
 
 export default function Home() {
   return (
@@ -74,7 +60,7 @@ export default function Home() {
             <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Hours</h3>
             <ul className="mt-2 space-y-1 text-ink">
               {SITE.hours.map((h) => (
-                <li key={h.days} className="flex justify-between gap-6 text-sm">
+                <li key={h.days} className="flex items-baseline justify-between gap-6 text-sm">
                   <span>{h.days}</span>
                   <span className="text-ink-soft">{h.time}</span>
                 </li>
@@ -153,8 +139,8 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
             <Image
-              src="/images/brand/ig-post3.webp"
-              alt="House-made desserts at Lamara Coffee & Kitchen"
+              src="/images/brand/latte-art.webp"
+              alt="Barista handing off a latte with heart latte art at Lamara Coffee & Kitchen"
               fill
               sizes="(min-width: 768px) 45vw, 90vw"
               className="object-cover"
@@ -183,20 +169,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-4 gap-2.5 sm:grid-cols-6 sm:gap-3 lg:grid-cols-8">
-            {GALLERY.map((g) => (
-              <div key={g.src} className="relative aspect-square overflow-hidden rounded-xl bg-cream-deep">
-                <Image
-                  src={g.src}
-                  alt={g.alt}
-                  fill
-                  loading="eager"
-                  sizes="140px"
-                  className="object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            ))}
-          </div>
+          <KitchenGallery />
         </div>
       </section>
 
