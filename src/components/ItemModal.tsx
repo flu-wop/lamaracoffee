@@ -99,7 +99,7 @@ export default function ItemModal({
     <div className="fixed inset-0 z-[60] flex items-end justify-center sm:items-center">
       <div onClick={onClose} className="absolute inset-0 bg-ink/50" />
       <div className="relative z-10 flex max-h-[90vh] w-full max-w-lg flex-col overflow-hidden rounded-t-3xl bg-paper sm:rounded-3xl">
-        <div className="relative h-48 w-full shrink-0 bg-cream-deep sm:h-56">
+        <div className="relative h-[min(12rem,28vh)] w-full shrink-0 bg-cream-deep sm:h-[min(14rem,28vh)]">
           {item.image ? (
             <Image src={item.image} alt={item.name} fill className="object-cover" />
           ) : (
