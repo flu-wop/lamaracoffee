@@ -140,18 +140,30 @@ export default function AboutPage() {
           </div>
           <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl bg-cream-deep">
             <Image
-              src="/images/brand/woodie-wagon.webp"
-              alt="Vintage surf wagon — Lamara's West Coast-inspired spirit"
+              src="/images/brand/exterior-building.webp"
+              alt="Lamara Coffee & Kitchen's 1920s building at 1300 North Broad Street"
               fill
               sizes="(min-width: 768px) 45vw, 90vw"
-              className="object-cover grayscale"
+              className="object-cover"
             />
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/60 to-transparent px-5 py-4">
               <p className="text-xs uppercase tracking-[0.25em] text-cream">
-                West Coast roots, Mid City home
+                1300 North Broad Street
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-5 pb-16 sm:px-8">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl bg-cream-deep">
+          <Image
+            src="/images/brand/interior-space.webp"
+            alt="Inside Lamara Coffee & Kitchen — the communal table and self-service bar"
+            fill
+            sizes="90vw"
+            className="object-cover"
+          />
         </div>
       </section>
 
