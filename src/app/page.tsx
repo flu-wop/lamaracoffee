@@ -43,12 +43,12 @@ export default function Home() {
 
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
             <Image
-              src="/images/brand/burrito-wrap.webp"
-              alt="La Brea Burrito wrap at Lamara Coffee & Kitchen"
+              src="/images/brand/storefront-sign.webp"
+              alt="Lamara Coffee & Kitchen storefront sign on North Broad Street"
               fill
               priority
               sizes="(min-width: 768px) 45vw, 90vw"
-              className="object-cover"
+              className="object-cover object-[50%_28%]"
             />
           </div>
         </div>
