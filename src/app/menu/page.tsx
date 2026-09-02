@@ -6,7 +6,7 @@ import { foodCategories, drinkCategories, addOnCategories } from "@/lib/menu-dat
 export const metadata: Metadata = {
   title: "Menu | Lamara Coffee & Kitchen",
   description:
-    "Organic, plant-forward food and drinks from Lamara Coffee & Kitchen in Mid City New Orleans — burritos, burgers, waffles, smoothie bowls, espresso drinks, and organic teas. Oat milk default, order online for pickup.",
+    "Organic, plant-forward food and drinks from Lamara Coffee & Kitchen in Mid City New Orleans — burritos, burgers, waffles, smoothie bowls, espresso drinks, and Organic teas. Oat milk default, order online for pickup.",
 };
 
 const allCategories = [...foodCategories, ...drinkCategories, ...addOnCategories];
@@ -20,7 +20,7 @@ export default function MenuPage() {
             Menu
           </p>
           <h1 className="font-display max-w-xl text-4xl font-light leading-tight text-ink sm:text-5xl">
-            Made-to-order, plant-forward, always <em className="text-terracotta-deep">organic</em>.
+            Made-to-order, plant-forward, always <em className="text-terracotta-deep">Organic</em>.
           </h1>
           <p className="mt-4 max-w-lg text-sm leading-relaxed text-ink-soft">
             Espresso is Ruby Roaster&apos;s Creamery blend. Almond, macadamia, or whole

@@ -120,9 +120,9 @@ export default function Home() {
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ink-soft">
               Lamara Coffee &amp; Kitchen is owned and run by Diane Heying and Misha
-              Kachkachishvili, built on the idea that organic and plant-based doesn&apos;t
+              Kachkachishvili, built on the idea that Organic and plant-based doesn&apos;t
               mean giving anything up — just cooking it with more care. Every menu item
-              starts from real, whole ingredients: house-made cashew milk, organic
+              starts from real, whole ingredients: house-made cashew milk, Organic
               produce, and bread and pastries made in-house.
             </p>
             <p className="mt-4 max-w-md text-base leading-relaxed text-ink-soft">

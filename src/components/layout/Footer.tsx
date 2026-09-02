@@ -67,6 +67,16 @@ export default function Footer() {
                 {SITE.instagram}
               </a>
             </li>
+            <li>
+              <a
+                href="https://www.facebook.com/lamaracoffeeandkitchen/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-terracotta-deep"
+              >
+                Facebook
+              </a>
+            </li>
           </ul>
         </div>
       </div>

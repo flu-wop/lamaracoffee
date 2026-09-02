@@ -77,6 +77,17 @@ export default function ContactPage() {
                 </a>
               </div>
               <div>
+                <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Facebook</h3>
+                <a
+                  href="https://www.facebook.com/lamaracoffeeandkitchen/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-2 block text-sm text-ink transition-colors hover:text-terracotta-deep"
+                >
+                  Lamara Coffee and Kitchen
+                </a>
+              </div>
+              <div>
                 <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Owners</h3>
                 <p className="mt-2 text-sm text-ink">Diane Heying &amp; Misha Kachkachishvili</p>
               </div>

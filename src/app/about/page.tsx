@@ -6,13 +6,13 @@ import { SITE } from "@/lib/site-data";
 export const metadata: Metadata = {
   title: "About | Lamara Coffee & Kitchen",
   description:
-    "Lamara Coffee & Kitchen is owned by Diane Heying and Misha Kachkachishvili, an organic plant-based cafe in Mid City New Orleans next to Esplanade Studios.",
+    "Lamara Coffee & Kitchen is owned by Diane Heying and Misha Kachkachishvili, an Organic plant-based cafe in Mid City New Orleans next to Esplanade Studios.",
 };
 
 const VALUES = [
   {
     title: "Organic First",
-    body: "We source organic produce, dairy alternatives, and pantry staples whenever we can get them — not as a marketing line, but because it's what we'd feed our own families.",
+    body: "We source Organic produce, dairy alternatives, and pantry staples whenever we can get them — not as a marketing line, but because it's what we'd feed our own families.",
   },
   {
     title: "Plant-Forward",
@@ -63,13 +63,13 @@ export default function AboutPage() {
         <div className="mt-8 space-y-5 text-base leading-relaxed text-ink-soft">
           <p>
             What started as a small counter on North Broad Street has grown into one
-            of Mid City&apos;s go-to spots for organic, plant-based food — without ever
+            of Mid City&apos;s go-to spots for Organic, plant-based food — without ever
             losing the feeling of a place two people built by hand. Diane and Misha
             still treat the menu the way they did on day one: real ingredients, made
             fresh, nothing hiding behind a label.
           </p>
           <p>
-            That means house-made cashew milk instead of a syrup base, organic
+            That means house-made cashew milk instead of a syrup base, Organic
             produce sourced with intention, and a kitchen that would rather 86 a dish
             than serve it any other way than it&apos;s supposed to taste.
           </p>
@@ -175,7 +175,7 @@ export default function AboutPage() {
           <div className="relative aspect-square overflow-hidden rounded-2xl">
             <Image
               src="/images/brand/ig-post1.webp"
-              alt="Plates of organic food at Lamara"
+              alt="Plates of Organic food at Lamara"
               fill
               sizes="(min-width: 640px) 25vw, 50vw"
               className="object-cover object-bottom"

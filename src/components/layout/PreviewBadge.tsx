@@ -7,7 +7,7 @@ export default function PreviewBadge() {
       className="mt-2 inline-flex items-center gap-2 font-mono text-xs text-ink-soft transition hover:text-terracotta-deep"
     >
       <span className="h-1.5 w-1.5 rounded-full bg-terracotta-deep" />
-      Designed by James Afflu &middot; IN-FLU-ENTIAL
+      Designed by IN-FLU-ENTIAL
     </a>
   );
 }

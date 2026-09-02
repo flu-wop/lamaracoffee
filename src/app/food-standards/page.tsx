@@ -12,20 +12,20 @@ const POINTS = [
   "Air filters are changed every 30 days with the highest-rated MERV filter available, for clean circulating air while you're dining inside.",
   "LED lighting throughout the whole building.",
   "Takeout containers and cups are always compostable — not petroleum-based, so they break down cleanly. They cost about 3x standard packaging, but given our volume, it's worth it. No drinks in single-use plastic. Glass gets recycled with Glass Half Full, aluminum goes to neighborhood scrappers, and everything else — including packaging customers leave behind — gets composted.",
-  "House-made milks are 3 ingredients, organic, no refined sugars or gums. Our oat milk is made with olive oil, not seed oil, made fresh daily and never chilled more than 48 hours — far less processed than what most cafés use.",
-  "Breads and tortillas are organic (tortillas contain sunflower oil — there's currently no organic olive or avocado oil tortilla on the market).",
+  "House-made milks are 3 ingredients, Organic, no refined sugars or gums. Our oat milk is made with olive oil, not seed oil, made fresh daily and never chilled more than 48 hours — far less processed than what most cafés use.",
+  "Breads and tortillas are Organic (tortillas contain sunflower oil — there's currently no Organic olive or avocado oil tortilla on the market).",
   "We cook only in extra virgin olive oil from Spain.",
   "Eggs are cooked in carbon steel, free of PFAS.",
   "Burgers and burritos are grilled on cast iron.",
   "Cut vegetables are washed through our filtration system and never held more than 3 days — often much less.",
-  "Eggs are organic, pasture-raised, from Pete & Gerry's — not fed a high-omega-6 diet.",
-  "Tofu is organic, sprouted, and high-protein.",
+  "Eggs are Organic, pasture-raised, from Pete & Gerry's — not fed a high-omega-6 diet.",
+  "Tofu is Organic, sprouted, and high-protein.",
   "Everything on the menu is built around fiber (eggs aside) — even our house-made burger has added psyllium and flax.",
-  "All dairy is grass-fed, organic, small-farm — and the smoothies that use dairy are fermented and/or probiotic.",
+  "All dairy is grass-fed, Organic, small-farm — and the smoothies that use dairy are fermented and/or probiotic.",
   "We never use palm oil.",
   "All house-made baked goods are gluten-free, in a celiac-safe kitchen.",
-  "About 90% of our produce is organic — exceptions like avocados and bananas follow the Clean Fifteen / Dirty Dozen guidance.",
-  "Our coffee isn't certified organic — it's grown by small Latin American farmers who can't afford certification, but it's shade-grown and natural-washed, including the decaf.",
+  "About 90% of our produce is Organic — exceptions like avocados and bananas follow the Clean Fifteen / Dirty Dozen guidance.",
+  "Our coffee isn't certified Organic — it's grown by small Latin American farmers who can't afford certification, but it's shade-grown and natural-washed, including the decaf.",
   "Produce isn't sourced locally year-round — we've had trouble finding growers who can supply what we need, consistently, organically. Seasonally, we do get local items in.",
   "Only Celtic sea salt in our food.",
   "Every entrée is macro-balanced across carbs, protein, fat, and fiber, and built to be nutrient-dense.",
@@ -45,7 +45,7 @@ export default function FoodStandardsPage() {
         A friendly PSA about what&apos;s actually in our food and drinks. Social media
         has no shortage of opinions on what to eat and avoid — but how would you
         actually know what your favorite restaurant uses, or what they do to protect
-        you? Since opening in 2019, we&apos;ve stayed committed to organic ingredients
+        you? Since opening in 2019, we&apos;ve stayed committed to Organic ingredients
         in their most natural form. That&apos;s just the start. Here&apos;s what sets us
         apart — you have every right to ask any place you support the same
         questions.

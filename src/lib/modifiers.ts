@@ -43,7 +43,7 @@ export const MODIFIER_GROUPS: Record<string, ModifierGroup> = {
       { id: "oat", label: "oat (gf+ olive oil unsweetened)", defaultSelected: true },
       { id: "almond", label: "almond (maple + sea salt)" },
       { id: "macadamia", label: "macadamia (lightly sweetened w cane)", price: 1 },
-      { id: "grass-fed-dairy", label: "organic grass fed dairy" },
+      { id: "grass-fed-dairy", label: "Organic grass fed dairy" },
       { id: "extra-hot", label: "extra hot please" },
       { id: "short", label: "make mine short (5oz)" },
       { id: "light-ice", label: "light ice please" },

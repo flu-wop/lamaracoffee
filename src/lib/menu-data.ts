@@ -22,7 +22,7 @@ export const foodCategories: MenuCategory[] = [
   {
     id: "eats",
     title: "Eats",
-    blurb: "Made to order, plant-forward, built on organic produce and local bread.",
+    blurb: "Made to order, plant-forward, built on Organic produce and local bread.",
     items: [
       {
         id: "labrea-burrito",
@@ -30,7 +30,7 @@ export const foodCategories: MenuCategory[] = [
         name: "LA Brea Burrito",
         tags: ["nut free"],
         description:
-          "Pasture-raised organic eggs, black beans, organic spinach, purple cabbage, chipotle mayo, grilled organic whole wheat tortilla. Vegan option available.",
+          "Pasture-raised Organic eggs, black beans, Organic spinach, purple cabbage, chipotle mayo, grilled Organic whole wheat tortilla. Vegan option available.",
         image: img("labrea.webp"),
         sizes: [
           { label: "Half", price: 13 },
@@ -43,7 +43,7 @@ export const foodCategories: MenuCategory[] = [
         name: "Grain-Free Belgian Waffle",
         tags: ["GF", "nuts", "egg"],
         description:
-          "Our grain-free seasonal Belgian-style waffle topped with organic seasonal fruit, coconut crème, and toasted pecans. Served with pure maple syrup.",
+          "Our grain-free seasonal Belgian-style waffle topped with Organic seasonal fruit, coconut crème, and toasted pecans. Served with pure maple syrup.",
         image: img("belgian.webp"),
         sizes: [{ label: "Standard", price: 14 }],
       },
@@ -53,7 +53,7 @@ export const foodCategories: MenuCategory[] = [
         name: "Del~Mar",
         tags: ["V", "nuts"],
         description:
-          "Monty's cashew cream cheese, seasonal tomatoes, organic English cucumbers, red onion, lemon, and micro greens on an organic high-protein bagel.",
+          "Monty's cashew cream cheese, seasonal tomatoes, Organic English cucumbers, red onion, lemon, and micro greens on an Organic high-protein bagel.",
         image: img("del-mar.webp"),
         sizes: [
           { label: "Half", price: 12 },
@@ -65,7 +65,7 @@ export const foodCategories: MenuCategory[] = [
         modifierGroupIds: ["allergy-alert"],
         name: "West Coast Toast",
         description:
-          "Grilled organic sourdough, smashed avocado, heirloom tomato, microgreens, chili-lime, choice of egg.",
+          "Grilled Organic sourdough, smashed avocado, heirloom tomato, microgreens, chili-lime, choice of egg.",
         image: img("west-coast-toast.webp"),
         sizes: [
           { label: "Half", price: 9 },
@@ -161,7 +161,7 @@ export const drinkCategories: MenuCategory[] = [
         modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Matcha Latte",
         description:
-          "Nekohama organic ceremonial-grade premium A1 matcha from Kyushu. We recommend it made with our house organic almond milk.",
+          "Nekohama Organic ceremonial-grade premium A1 matcha from Kyushu. We recommend it made with our house Organic almond milk.",
         image: img("matcha-latte.webp"),
         sizes: [
           { label: "16oz", price: 6.5 },
@@ -183,7 +183,7 @@ export const drinkCategories: MenuCategory[] = [
         id: "vanilla-latte",
         modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Vanilla Latte",
-        description: "Ruby's double shot espresso, house organic vanilla syrup, milk of choice.",
+        description: "Ruby's double shot espresso, house Organic vanilla syrup, milk of choice.",
         image: img("vanilla-lattee.webp"),
         sizes: [
           { label: "16oz", price: 5.75 },
@@ -216,7 +216,7 @@ export const drinkCategories: MenuCategory[] = [
         id: "honey-cinnamon-latte",
         modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Honey-Cinnamon Latte",
-        description: "Local 9th Ward raw honey, organic Ceylon cinnamon, double shot espresso, steamed milk of choice.",
+        description: "Local 9th Ward raw honey, Organic Ceylon cinnamon, double shot espresso, steamed milk of choice.",
         image: img("honey-cinnamon.webp"),
         sizes: [
           { label: "16oz", price: 6.0 },
@@ -239,7 +239,7 @@ export const drinkCategories: MenuCategory[] = [
         modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Turmeric Ginger Latte",
         tags: ["fan favorite"],
-        description: "Kilogram organic loose-leaf tonic blended with ginger, black licorice, lemon + lime peel, steamed almond milk.",
+        description: "Kilogram Organic loose-leaf tonic blended with ginger, black licorice, lemon + lime peel, steamed almond milk.",
         image: img("tumeric.webp"),
         sizes: [
           { label: "16oz", price: 5.25 },
@@ -303,21 +303,21 @@ export const drinkCategories: MenuCategory[] = [
         id: "hot-chocolate",
         modifierGroupIds: ["hot-or-iced", "no-caffeine", "milk-options"],
         name: "Hot Chocolate",
-        description: "Cafe Moto's organic dark chocolate recipe, oat milk, steamed.",
+        description: "Cafe Moto's Organic dark chocolate recipe, oat milk, steamed.",
         image: img("hot-chocolate.webp"),
         sizes: [{ label: "12oz", price: 4.0 }],
       },
       {
         id: "loose-leaf-tea",
         name: "Loose Leaf Tea",
-        description: "Select from our collection of organic loose leaf teas.",
+        description: "Select from our collection of Organic loose leaf teas.",
         image: img("looseleaf.webp"),
         sizes: [{ label: "16oz", price: 4.0 }],
       },
       {
         id: "daily-iced-tea",
         name: "Daily Iced Tea",
-        description: "Kilogram organic cold brew tea blend of the day, over ice, unsweetened.",
+        description: "Kilogram Organic cold brew tea blend of the day, over ice, unsweetened.",
         image: img("looseleaf.webp"),
         sizes: [
           { label: "16oz", price: 4.0 },
@@ -346,7 +346,7 @@ export const drinkCategories: MenuCategory[] = [
       {
         id: "london-fog",
         name: "London Fog",
-        description: "Kilogram organic loose leaf tea and steamed macadamia milk.",
+        description: "Kilogram Organic loose leaf tea and steamed macadamia milk.",
         image: img("looseleaf.webp"),
         sizes: [{ label: "16oz", price: 4.75 }],
       },
@@ -380,7 +380,7 @@ export const drinkCategories: MenuCategory[] = [
         id: "frozen-matcha",
         name: "Frozen Matcha",
         tags: ["seasonal"],
-        description: "House-made organic almond crème, 3g matcha, maple syrup, over ice.",
+        description: "House-made Organic almond crème, 3g matcha, maple syrup, over ice.",
         image: img("frozen.webp"),
         sizes: [{ label: "16oz", price: 9.0 }],
       },
@@ -404,7 +404,7 @@ export const drinkCategories: MenuCategory[] = [
         modifierGroupIds: ["smoothie-boosters"],
         name: "Berry Longevity+",
         tags: ["best seller"],
-        description: "Our best-selling blend of mixed organic berries, banana, plant protein, raw coconut butter, cashew milk.",
+        description: "Our best-selling blend of mixed Organic berries, banana, plant protein, raw coconut butter, cashew milk.",
         image: img("berry.webp"),
         sizes: [{ label: "16oz", price: 13 }],
       },
@@ -501,7 +501,7 @@ export const drinkCategories: MenuCategory[] = [
         id: "raw-protein-bites",
         name: "Raw Protein Bites",
         tags: ["V", "GF"],
-        description: "All-organic raw snack, hand-rolled — plant protein, hemp seeds, maple syrup.",
+        description: "All-Organic raw snack, hand-rolled — plant protein, hemp seeds, maple syrup.",
         image: img("raw-bite.webp"),
         sizes: [{ label: "3 pc", price: 10 }],
       },
@@ -525,7 +525,7 @@ export const drinkCategories: MenuCategory[] = [
       {
         id: "omega-chia-parfait",
         name: "Omega Chia Parfait",
-        description: "Packed with fiber and good omega fats — coconut milk, macadamia milk, chia, agave, organic fruit, coconut shreds.",
+        description: "Packed with fiber and good omega fats — coconut milk, macadamia milk, chia, agave, Organic fruit, coconut shreds.",
         image: img("chia-parfait.webp"),
         sizes: [{ label: "Cup", price: 7 }],
       },

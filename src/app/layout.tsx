@@ -7,7 +7,7 @@ import { CartProvider } from "@/lib/cart-context";
 
 const TITLE = "Lamara Coffee & Kitchen | Organic Café in Mid City, New Orleans";
 const DESCRIPTION =
-  "An all-organic, West Coast-inspired café in Mid City New Orleans serving espresso drinks, organic teas, healthy vegetarian small plates, a full smoothie bar, and gluten-free house-made baked goods. Vegan, vegetarian, and gluten-free options daily — order online for pickup.";
+  "An all-Organic, West Coast-inspired café in Mid City New Orleans serving espresso drinks, Organic teas, healthy vegetarian small plates, a full smoothie bar, and gluten-free house-made baked goods. Vegan, vegetarian, and gluten-free options daily — order online for pickup.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lamaracoffee.vercel.app"),
