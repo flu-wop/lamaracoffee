@@ -25,6 +25,32 @@ export default function Footer() {
             Lamara welcomes all — we do not tolerate hate, discrimination, violence,
             or intolerance.
           </p>
+          <div className="mt-5 flex items-center gap-3">
+            <a
+              href="https://www.instagram.com/lamaracoffeeandkitchen/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Lamara on Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-terracotta-deep hover:text-terracotta-deep"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/lamaracoffeeandkitchen/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Lamara on Facebook"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-line text-ink-soft transition-colors hover:border-terracotta-deep hover:text-terracotta-deep"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7">
+                <path d="M14 9h2.5V6H14c-1.9 0-3.5 1.6-3.5 3.5V12H8v3h2.5v6h3v-6H16l.5-3h-3V9.7c0-.4.3-.7.5-.7Z" />
+              </svg>
+            </a>
+          </div>
         </div>
 
         <div>
@@ -57,26 +83,6 @@ export default function Footer() {
             <li><Link href="/about" className="hover:text-terracotta-deep">About</Link></li>
             <li><Link href="/food-standards" className="hover:text-terracotta-deep">What&apos;s In Our Food</Link></li>
             <li><Link href="/contact" className="hover:text-terracotta-deep">Contact</Link></li>
-            <li>
-              <a
-                href="https://www.instagram.com/lamaracoffeeandkitchen/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-terracotta-deep"
-              >
-                {SITE.instagram}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/lamaracoffeeandkitchen/"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-terracotta-deep"
-              >
-                Facebook
-              </a>
-            </li>
           </ul>
         </div>
       </div>

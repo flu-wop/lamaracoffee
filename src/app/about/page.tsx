@@ -42,35 +42,56 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-4xl px-5 py-20 sm:px-8">
-        <p className="divider-sprout text-xs uppercase tracking-[0.3em] text-sage-deep">
-          Diane &amp; Misha
-        </p>
-        <h2 className="font-display mt-4 text-3xl font-light leading-tight text-ink sm:text-4xl">
-          Lamara Coffee &amp; Kitchen is owned and run by{" "}
-          <span className="text-terracotta-deep">Diane Heying</span> and{" "}
-          <span className="text-terracotta-deep">Misha Kachkachishvili</span>.
-        </h2>
-        <div className="mt-8 space-y-5 text-base leading-relaxed text-ink-soft">
-          <p>
-            What started as a small counter on North Broad Street has grown into one
-            of Mid City&apos;s go-to spots for Organic, plant-based food — without ever
-            losing the feeling of a place two people built by hand. Diane and Misha
-            still treat the menu the way they did on day one: real ingredients, made
-            fresh, nothing hiding behind a label.
-          </p>
-          <p>
-            That means house-made cashew milk instead of a syrup base, Organic
-            produce sourced with intention, and a kitchen that would rather 86 a dish
-            than serve it any other way than it&apos;s supposed to taste.
-          </p>
-          <p>
-            Lamara sits right next door to <strong className="text-ink">{SITE.neighbor}</strong>,
-            and over the years the two businesses have grown into neighbors in every
-            sense — engineers and artists grabbing a matcha before a session, a bowl
-            between takes, coffee running back and forth through the block. It&apos;s
-            given Lamara a rhythm that&apos;s equal parts café and creative pit stop.
-          </p>
+      <section className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+        <div className="grid items-start gap-12 md:grid-cols-[1.2fr_1fr] md:gap-16">
+          <div>
+            <p className="divider-sprout text-xs uppercase tracking-[0.3em] text-sage-deep">
+              Diane &amp; Misha
+            </p>
+            <h2 className="font-display mt-4 text-3xl font-light leading-tight text-ink sm:text-4xl">
+              Lamara Coffee &amp; Kitchen is owned and run by{" "}
+              <span className="text-terracotta-deep">Diane Heying</span> and{" "}
+              <span className="text-terracotta-deep">Misha Kachkachishvili</span>.
+            </h2>
+            <div className="mt-8 space-y-5 text-base leading-relaxed text-ink-soft">
+              <p>
+                What started as a small counter on North Broad Street has grown into one
+                of Mid City&apos;s go-to spots for Organic, plant-based food — without ever
+                losing the feeling of a place two people built by hand. Diane and Misha
+                still treat the menu the way they did on day one: real ingredients, made
+                fresh, nothing hiding behind a label.
+              </p>
+              <p>
+                That means house-made cashew milk instead of a syrup base, Organic
+                produce sourced with intention, and a kitchen that would rather 86 a dish
+                than serve it any other way than it&apos;s supposed to taste.
+              </p>
+              <p>
+                Lamara sits right next door to <strong className="text-ink">{SITE.neighbor}</strong>,
+                and over the years the two businesses have grown into neighbors in every
+                sense — engineers and artists grabbing a matcha before a session, a bowl
+                between takes, coffee running back and forth through the block. It&apos;s
+                given Lamara a rhythm that&apos;s equal parts café and creative pit stop.
+              </p>
+            </div>
+          </div>
+
+          <div className="relative flex aspect-[4/5] w-full flex-col items-center justify-center overflow-hidden rounded-3xl border border-sage-deep/25 bg-gradient-to-b from-sage-pale/70 to-cream-deep px-8 text-center">
+            <div className="absolute inset-4 rounded-2xl border border-sage-deep/20" />
+            <span className="relative text-xs uppercase tracking-[0.3em] text-sage-deep">
+              Owners
+            </span>
+            <p className="font-display relative mt-5 text-6xl font-light leading-none text-ink sm:text-7xl">
+              D<span className="mx-2 text-terracotta-deep">&amp;</span>M
+            </p>
+            <p className="relative mt-6 max-w-[220px] text-sm leading-relaxed text-ink-soft">
+              Diane Heying &amp; Misha Kachkachishvili
+            </p>
+            <span className="relative mt-4 h-px w-10 bg-sage-deep/40" />
+            <p className="relative mt-4 text-xs uppercase tracking-[0.2em] text-sage-deep">
+              Est. 2019 · Mid City
+            </p>
+          </div>
         </div>
       </section>
 

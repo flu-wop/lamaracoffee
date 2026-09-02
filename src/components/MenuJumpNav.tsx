@@ -6,7 +6,7 @@ export default function MenuJumpNav({
   if (items.length < 2) return null;
   return (
     <div className="sticky top-[73px] z-30 -mx-5 border-b border-line bg-cream/95 px-5 py-3 backdrop-blur-md sm:-mx-8 sm:px-8">
-      <div className="mx-auto flex max-w-6xl flex-wrap gap-x-6 gap-y-2">
+      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 text-center">
         {items.map((item) => (
           <a
             key={item.id}
