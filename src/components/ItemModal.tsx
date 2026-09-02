@@ -129,7 +129,7 @@ export default function ItemModal({
 
           {item.sizes.length > 1 && (
             <div className="mt-5">
-              <p className="mb-2 text-xs uppercase tracking-[0.14em] text-ink-soft">Size</p>
+              <p className="mb-2 text-xs uppercase tracking-[0.14em] text-ink-soft">Option</p>
               <div className="flex flex-wrap gap-2">
                 {item.sizes.map((s, i) => (
                   <button

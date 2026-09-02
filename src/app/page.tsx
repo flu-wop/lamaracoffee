@@ -7,86 +7,49 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/brand/ig-post1.webp"
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-top"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/70 to-ink/25" />
-          <div className="absolute inset-0 bg-gradient-to-r from-cream/40 via-transparent to-cream/10" />
-        </div>
-
-        <div className="relative mx-auto flex min-h-[86vh] max-w-6xl flex-col justify-end px-5 pb-16 pt-40 sm:px-8">
-          <p className="mb-4 text-xs uppercase tracking-[0.35em] text-sage-deep">
-            Mid City · New Orleans
-          </p>
-          <div className="mb-5 flex items-center gap-2">
-            <span className="flex text-terracotta-deep" aria-hidden>
-              {"★★★★★"}
-            </span>
-            <span className="text-sm text-ink-soft">4.4 · 100+ reviews</span>
-          </div>
-          <h1 className="font-display max-w-3xl text-balance text-5xl font-light leading-[1.05] text-ink sm:text-6xl md:text-7xl">
-            Organic food, brewed slow, grown <em className="text-terracotta-deep">honest</em>.
-          </h1>
-          <p className="mt-6 max-w-lg text-base leading-relaxed text-ink-soft">
-            A plant-forward coffee &amp; kitchen built on real ingredients, right next
-            door to {SITE.neighbor} — where the neighborhood eats before it creates.
-          </p>
-
-          <div className="mt-9 flex flex-wrap items-center gap-4">
-            <Link
-              href="/menu"
-              className="rounded-full bg-ink px-8 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
-            >
-              View Menu
-            </Link>
-          </div>
-          <p className="mt-3 text-sm text-ink-soft">
-            No account needed — order online, pick up in the door next to the studio.
-          </p>
-        </div>
-      </section>
-
-      {/* Hours + Location strip */}
-      <section className="border-y border-line bg-cream-deep">
-        <div className="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 md:grid-cols-3">
+      <section className="mx-auto max-w-6xl px-5 pb-16 pt-16 sm:px-8 sm:pt-20">
+        <div className="grid items-center gap-12 md:grid-cols-2 md:gap-16">
           <div>
-            <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Hours</h3>
-            <ul className="mt-2 space-y-1 text-ink">
-              {SITE.hours.map((h) => (
-                <li key={h.days} className="flex items-baseline justify-between gap-6 text-sm">
-                  <span>{h.days}</span>
-                  <span className="text-ink-soft">{h.time}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Location</h3>
-            <p className="mt-2 text-sm text-ink">
-              {SITE.address.line1}
-              <br />
-              {SITE.address.line2}
+            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-sage-deep">
+              Mid City · New Orleans
             </p>
-            <a
-              href={`tel:${SITE.phoneHref}`}
-              className="mt-2 inline-block text-sm text-ink-soft transition-colors hover:text-sage-deep"
-            >
-              {SITE.phone}
-            </a>
-          </div>
-          <div>
-            <h3 className="text-xs uppercase tracking-[0.22em] text-sage-deep">Next Door</h3>
-            <p className="mt-2 text-sm text-ink">
-              Esplanade Studios — grab breakfast before a session, or a smoothie after
-              one.
+            <div className="mb-5 flex items-center gap-2">
+              <span className="flex text-terracotta-deep" aria-hidden>
+                {"★★★★★"}
+              </span>
+              <span className="text-sm text-ink-soft">4.4 · 100+ reviews</span>
+            </div>
+            <h1 className="font-display text-balance text-5xl font-light leading-[1.05] text-ink sm:text-6xl">
+              Organic food, brewed slow, grown{" "}
+              <em className="text-terracotta-deep">honest</em>.
+            </h1>
+            <p className="mt-6 max-w-lg text-base leading-relaxed text-ink-soft">
+              A plant-forward coffee &amp; kitchen built on real ingredients, right next
+              door to {SITE.neighbor} — where the neighborhood eats before it creates.
             </p>
+
+            <div className="mt-9 flex flex-wrap items-center gap-4">
+              <Link
+                href="/menu"
+                className="rounded-full bg-ink px-8 py-3.5 text-xs uppercase tracking-[0.18em] text-cream transition-colors hover:bg-terracotta-deep"
+              >
+                View Menu
+              </Link>
+            </div>
+            <p className="mt-3 text-sm text-ink-soft">
+              No account needed — order online, pick up in the door next to the studio.
+            </p>
+          </div>
+
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
+            <Image
+              src="/images/brand/burrito-wrap.webp"
+              alt="La Brea Burrito wrap at Lamara Coffee & Kitchen"
+              fill
+              priority
+              sizes="(min-width: 768px) 45vw, 90vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>
@@ -139,8 +102,8 @@ export default function Home() {
           </div>
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
             <Image
-              src="/images/brand/latte-art.webp"
-              alt="Barista handing off a latte with heart latte art at Lamara Coffee & Kitchen"
+              src="/images/brand/ig-post3.webp"
+              alt="Fresh-made ice cream sandwiches in the Lamara kitchen"
               fill
               sizes="(min-width: 768px) 45vw, 90vw"
               className="object-cover"

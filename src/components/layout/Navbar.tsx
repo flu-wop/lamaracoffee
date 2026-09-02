@@ -25,8 +25,8 @@ export default function Navbar() {
           <Image
             src="/images/brand/wordmark-dark.webp"
             alt="Lamara"
-            width={220}
-            height={39}
+            width={280}
+            height={35}
             priority
             className="h-6 w-auto sm:h-7"
           />

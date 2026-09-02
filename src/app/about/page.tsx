@@ -31,17 +31,8 @@ const VALUES = [
 export default function AboutPage() {
   return (
     <div>
-      <section className="relative overflow-hidden border-b border-line">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/brand/ig-post2.webp"
-            alt=""
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-cream via-cream/75 to-ink/20" />
-        </div>
-        <div className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8">
+      <section className="border-b border-line bg-sage-pale/50">
+        <div className="mx-auto max-w-6xl px-5 py-24 sm:px-8">
           <p className="mb-3 text-xs uppercase tracking-[0.3em] text-sage-deep">
             About Lamara
           </p>
@@ -145,42 +136,54 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <div className="relative aspect-square overflow-hidden rounded-2xl">
+          <Link
+            href="/menu"
+            className="group relative aspect-square overflow-hidden rounded-2xl"
+          >
             <Image
               src="/images/brand/soup-curry.webp"
               alt="Plant-based soup and tofu curry at Lamara"
               fill
               sizes="(min-width: 640px) 25vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
-          </div>
-          <div className="relative aspect-square overflow-hidden rounded-2xl">
+          </Link>
+          <Link
+            href="/menu"
+            className="group relative aspect-square overflow-hidden rounded-2xl"
+          >
             <Image
               src="/images/brand/burrito-wrap.webp"
               alt="Breakfast burrito wrap at Lamara"
               fill
               sizes="(min-width: 640px) 25vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
-          </div>
-          <div className="relative aspect-square overflow-hidden rounded-2xl">
+          </Link>
+          <Link
+            href="/menu"
+            className="group relative aspect-square overflow-hidden rounded-2xl"
+          >
             <Image
               src="/images/brand/rainbow-wrap.webp"
               alt="Rainbow lunch wrap at Lamara"
               fill
               sizes="(min-width: 640px) 25vw, 50vw"
-              className="object-cover"
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
-          </div>
-          <div className="relative aspect-square overflow-hidden rounded-2xl">
+          </Link>
+          <Link
+            href="/menu"
+            className="group relative aspect-square overflow-hidden rounded-2xl"
+          >
             <Image
               src="/images/brand/ig-post1.webp"
               alt="Plates of Organic food at Lamara"
               fill
               sizes="(min-width: 640px) 25vw, 50vw"
-              className="object-cover object-bottom"
+              className="object-cover object-bottom transition-transform duration-300 group-hover:scale-105"
             />
-          </div>
+          </Link>
         </div>
       </section>
 

@@ -11,8 +11,8 @@ export default function Footer() {
           <Image
             src="/images/brand/wordmark-dark.webp"
             alt="Lamara"
-            width={220}
-            height={39}
+            width={280}
+            height={35}
             className="h-7 w-auto"
           />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
