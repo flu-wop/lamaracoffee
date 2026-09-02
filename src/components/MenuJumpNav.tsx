@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function MenuJumpNav({
   items,
@@ -8,7 +8,6 @@ export default function MenuJumpNav({
   items: { id: string; title: string }[];
 }) {
   const [activeId, setActiveId] = useState<string>(items[0]?.id ?? "");
-  const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const sections = items
@@ -33,26 +32,15 @@ export default function MenuJumpNav({
     return () => observer.disconnect();
   }, [items]);
 
-  useEffect(() => {
-    const activeLink = navRef.current?.querySelector<HTMLAnchorElement>(
-      `a[data-id="${activeId}"]`
-    );
-    activeLink?.scrollIntoView({ block: "nearest", inline: "center", behavior: "smooth" });
-  }, [activeId]);
-
   if (items.length < 2) return null;
   return (
     <div className="sticky top-[73px] z-30 -mx-5 border-b border-line bg-cream/95 px-5 py-3 backdrop-blur-md sm:-mx-8 sm:px-8">
-      <div
-        ref={navRef}
-        className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 text-center"
-      >
+      <div className="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-2 text-center">
         {items.map((item) => {
           const isActive = item.id === activeId;
           return (
             <a
               key={item.id}
-              data-id={item.id}
               href={`#${item.id}`}
               aria-current={isActive ? "true" : undefined}
               className={`text-xs uppercase tracking-[0.16em] transition-colors ${
