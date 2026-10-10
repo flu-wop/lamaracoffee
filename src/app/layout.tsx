@@ -11,6 +11,7 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lamaracoffee.vercel.app"),
+  robots: { index: false, follow: false }, // demo: remove at launch
   title: TITLE,
   description: DESCRIPTION,
   openGraph: {
